@@ -9,7 +9,8 @@ Esta es un ejemplo de una aplicación Chat uno a uno con uso de RealTime Databas
 * [Buy me a coffee](https://www.buymeacoffee.com/oscarsevgar)
 
 ## Ver ejemplo en vivo
-- [Enlace al video en mi canal de YouTube]([https://oscarsevgar.github.io/mi-portafolio/](https://youtu.be/-xGb06pFQdc])
+- [Enlace al video en mi canal de YouTube]
+- ([https://youtu.be/-xGb06pFQdc])
 
 ## Instalación
 1) Generar una cuenta en Firebase y bajar el archivo GoogleService-Info y habilitar RealTime Database.
