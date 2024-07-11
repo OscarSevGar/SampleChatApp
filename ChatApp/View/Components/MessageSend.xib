@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="DAk-VH-icE" userLabel="Message Sent" customClass="MessageSend" customModule="ChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DAk-VH-icE" id="hJZ-ME-xaO">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdt-Ck-Q7O">
+                        <rect key="frame" x="220.66666666666663" y="12" width="174.33333333333337" height="96"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elitdunt ut l" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zJ6-Oi-dfO">
+                                <rect key="frame" x="5" y="5" width="164.33333333333334" height="66"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPz-gb-ETb">
+                                <rect key="frame" x="12" y="71" width="150.33333333333334" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LGp-ok-FKl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JPz-gb-ETb" secondAttribute="trailing" constant="12" id="62C-BK-Zg8"/>
+                            <constraint firstItem="JPz-gb-ETb" firstAttribute="top" secondItem="zJ6-Oi-dfO" secondAttribute="bottom" id="EVC-jP-LtL"/>
+                            <constraint firstItem="zJ6-Oi-dfO" firstAttribute="top" secondItem="bdt-Ck-Q7O" secondAttribute="top" constant="5" id="Tqg-Xa-mad"/>
+                            <constraint firstItem="zJ6-Oi-dfO" firstAttribute="leading" secondItem="bdt-Ck-Q7O" secondAttribute="leading" constant="5" id="ZeU-Jv-yAg"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="fY4-Yk-8r4"/>
+                            <constraint firstItem="JPz-gb-ETb" firstAttribute="leading" secondItem="bdt-Ck-Q7O" secondAttribute="leading" constant="12" id="ibI-EH-dwK"/>
+                            <constraint firstAttribute="trailing" secondItem="zJ6-Oi-dfO" secondAttribute="trailing" constant="5" id="nR1-Ze-PaU"/>
+                            <constraint firstAttribute="bottom" secondItem="JPz-gb-ETb" secondAttribute="bottom" constant="5" id="zJK-N4-rmV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bdt-Ck-Q7O" secondAttribute="bottom" constant="20" id="oAp-xK-sCM"/>
+                    <constraint firstItem="bdt-Ck-Q7O" firstAttribute="top" secondItem="hJZ-ME-xaO" secondAttribute="top" constant="12" id="tTg-g4-I5z"/>
+                    <constraint firstAttribute="trailing" secondItem="bdt-Ck-Q7O" secondAttribute="trailing" constant="20" id="xHQ-rh-Cyb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="KlS-Lt-6s6"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="message" destination="zJ6-Oi-dfO" id="HS7-1X-YDQ"/>
+                <outlet property="time" destination="JPz-gb-ETb" id="boT-En-Q1V"/>
+            </connections>
+            <point key="canvasLocation" x="173.2824427480916" y="48.591549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
